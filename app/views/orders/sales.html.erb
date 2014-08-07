@@ -5,11 +5,11 @@
 
 <table class="table table-striped table-bordered">
   <tr>
-    <th class="center">Image</th>
-    <th class="center">Name</th>
-    <th class="center">Price</th>
-    <th class="center">Customer</th>
-    <th class="center">Date Sold</th>
+    <th class="center">图片</th>
+    <th class="center">名称</th>
+    <th class="center">价格</th>
+    <th class="center">买家</th>
+    <th class="center">时间</th>
   </tr>
 
   <% @orders.each do |order| %>
@@ -26,5 +26,5 @@
 
 <br />
 <% if user_signed_in? %>
-  <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
+  <%= link_to '添加新物品', new_listing_path, class: "btn btn-link" %>
 <% end %>
